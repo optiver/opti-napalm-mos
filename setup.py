@@ -7,11 +7,11 @@ with open("requirements.txt", "r") as fs:
     reqs = [r for r in fs.read().splitlines() if (len(r) > 0 and not r.startswith("#"))]
 
 setup(
-    name="napalm-mos",
+    name="opti-napalm-mos",
     version="4.0.1",
     packages=find_packages(),
-    author="Benny Holmgren, Brandon Ewing",
-    author_email="benny@holmgren.id.au, brandon.ewing@warningg.com",
+    author="Benny Holmgren, Brandon Ewing, ",
+    author_email="benny@holmgren.id.au, brandon.ewing@warningg.com, ams_pypi@optiver.com",
     description="Network Automation and Programmability Abstraction Layer with Multivendor support",
     classifiers=[
         "Topic :: Utilities",
