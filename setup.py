@@ -8,11 +8,11 @@ with open("requirements.txt", "r") as fs:
 
 setup(
     name="opti-napalm-mos",
-    version="4.0.1",
+    version="4.0.2",
     packages=find_packages(),
     author="Benny Holmgren, Brandon Ewing, ",
     author_email="benny@holmgren.id.au, brandon.ewing@warningg.com, ams_pypi@optiver.com",
-    description="Network Automation and Programmability Abstraction Layer with Multivendor support",
+    description="Optiver's fork of NAPALM-MOS",
     classifiers=[
         "Topic :: Utilities",
         "Programming Language :: Python",
