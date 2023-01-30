@@ -9,7 +9,7 @@
     "mtu": -1
   },
   "et3": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -27,7 +27,7 @@
     "mtu": -1
   },
   "et6": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -36,7 +36,7 @@
     "mtu": -1
   },
   "et7": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -45,7 +45,7 @@
     "mtu": -1
   },
   "et4": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -54,7 +54,7 @@
     "mtu": -1
   },
   "et5": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -63,7 +63,7 @@
     "mtu": -1
   },
   "et8": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -72,7 +72,7 @@
     "mtu": -1
   },
   "et9": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -81,7 +81,7 @@
     "mtu": -1
   },
   "et16": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -90,7 +90,7 @@
     "mtu": -1
   },
   "et14": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -99,7 +99,7 @@
     "mtu": -1
   },
   "et15": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -117,7 +117,7 @@
     "mtu": -1
   },
   "et10": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -126,7 +126,7 @@
     "mtu": -1
   },
   "et11": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -135,7 +135,7 @@
     "mtu": -1
   },
   "et12": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
@@ -144,7 +144,7 @@
     "mtu": -1
   },
   "et13": {
-    "is_enabled": true,
+    "is_enabled": false,
     "description": "",
     "last_flapped": 0,
     "is_up": false,
