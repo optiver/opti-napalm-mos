@@ -357,17 +357,14 @@ class MOSDriver(NetworkDriver):
         for interface, values in output[0]["interfaces"].items():
             interfaces[interface] = {}
 
-            # A L1 device doesn't really have a line protocol.
-            # Let's say an rx signal means line protocol is up for now.
-            if values["rx"].startswith("up"):
-                interfaces[interface]["is_up"] = True
-                interfaces[interface]["is_enabled"] = True
-            else:
-                interfaces[interface]["is_up"] = False
-                if "shutdown" in values["rx"]:
-                    interfaces[interface]["is_enabled"] = False
-                else:
-                    interfaces[interface]["is_enabled"] = True
+            # This code looks a bit complex, and it merits an explanation. From a physical point of view
+            # We can only enable transmission because we can't physically prevent light from coming into our optic.
+            # We know if we are transmitting, and we know if we are receiving data.
+            # Given this, is_enabled can be decided by looking at the tx interface 
+            # Here, by "link" we mean the layer 1 status, so "link up" means the link is ready to carry Ethernet frames
+            # To do so, we need to be able to both receive and transmit ethernet frames
+            interfaces[interface]["is_enabled"] = values["tx"].startswith("up")
+            interfaces[interface]["is_up"] = interfaces[interface]["is_enabled"] and values["rx"].startswith("up")
 
             interfaces[interface]["description"] = descriptions.get(interface, "")
 
